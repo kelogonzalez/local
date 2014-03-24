@@ -1,0 +1,301 @@
+@CHARSET "ISO-8859-1";
+body{
+background-image: url(images/fondo.gif) ;
+color: black;
+font-family: calibri, Arial;
+font-size: 100%;
+}
+#mensaje{
+color: red;
+text-align: center;
+font-size: 200%;
+
+}
+#tabla_pres{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px ; 
+  
+
+}
+
+#pie{
+  color:black;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+  
+
+} 
+
+h3{
+color: #00628d;
+margin: 0.25em auto;
+text-align:center;
+text-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+font-size:100%;
+}
+/* EMPIEZA EL DISEÑO EN CSS DEL MENU PRINCIPAL*/
+.Menuprin{
+	border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 40px; 
+    width:630px;
+    /* el color de fondo */
+    background: #00628d;
+    background: -moz-linear-gradient(#00628d,#95b0cb);
+    background: -webkit-linear-gradient(#00628d,#95b0cb);
+    background: -o-linear-gradient(#00628d,#95b0cb);
+    background: -ms-linear-gradient(#00628d,#95b0cb);
+    background: linear-gradient(#00628d,#95b0cb);
+}
+.Menuprin br { display:none; }
+ .Menuprin li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .Menuprin li a {
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    color: #eee;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+    /* animamos el cambio de color de los textos */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  /* eliminamos los bordes del primer y el último */
+ .Menuprin li:first-child a { border-left: none; }
+  .Menuprin li:last-child a{ border-right: none; }
+  /* efecto hover cambia el color */
+  .Menuprin li:hover > a { color: #3bb9ee; }
+
+  /* los submenús */
+  .Menuprin ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: #123559;
+    background: -moz-linear-gradient(#123559,#95b0cb);
+    background: -webkit-linear-gradient(#123559,#95b0cb);
+    background: -o-linear-gradient(#123559,#95b0cb);
+    background: -ms-linear-gradient(#123559,#95b0cb);
+    background: linear-gradient(#123559,#95b0cb);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+  /* son visibes al poner el cursor encima */
+  .Menuprin li:hover > ul { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .Menuprin ul li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .Menuprin li:hover > ul li {
+    height: 36px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .Menuprin ul li a {
+    border: none;
+    border-bottom: 1px solid #187ee5;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 100px;
+  }
+  /* el último n otiene un borde */
+  .Menuprin ul li:last-child a { border: none; }
+  /* TERMINA EL DISEÑO EN CSS DEL MENU PRINCIPAL*/
+
+
+
+  .Menuinvitado{
+  border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 40px; 
+    width:160px;
+    margin-bottom: 18px;
+    /* el color de fondo */
+    background: #00628d;
+    background: -moz-linear-gradient(#00628d,#6d92b7);
+    background: -webkit-linear-gradient(#00628d,#6d92b7);
+    background: -o-linear-gradient(#00628d,#6d92b7);
+    background: -ms-linear-gradient(#00628d,#6d92b7);
+    background: linear-gradient(#00628d,#6d92b7);
+}
+.Menuinvitado br { display:none; }
+ .Menuinvitado li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .Menuinvitado li a {
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    color: #EEE;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+    /* animamos el cambio de color de los textos */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  /* eliminamos los bordes del primer y el último */
+ .Menuinvitado li:first-child a { border-left: none; }
+  .Menuinvitado li:last-child a{ border-right: none; }
+  /* efecto hover cambia el color */
+  .Menuinvitado li:hover > a { color: #A52A2A; }
+
+  /* los submenús */
+  .Menuinvitado ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: #00628d;
+    background: -moz-linear-gradient(#00628d,#6d92b7);
+    background: -webkit-linear-gradient(#00628d,#6d92b7);
+    background: -o-linear-gradient(#00628d,#6d92b7);
+    background: -ms-linear-gradient(#00628d,#6d92b7);
+    background: linear-gradient(#00628d,#6d92b7);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+  /* son visibes al poner el cursor encima */
+  .Menuinvitado li:hover > ul { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .Menuinvitado ul li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .Menuinvitado li:hover > ul li {
+    height: 36px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .Menuinvitado ul li a {
+    border: none;
+    border-bottom: 1px solid #111;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 100px;
+  }
+  /* el último n otiene un borde */
+  .Menuinvitado ul li:last-child a { border: none; }
+
+
+
+#ImgPan{
+margin-left: 400px;
+margin-bottom: 4px;
+}
+
+#texto{
+color: #1882ad;
+width: 300px;
+font-size: 25px;
+height: 100px;
+margin-top: 102px;
+margin-left: 380px;
+top:20px;
+text-align: center;
+}
+
+#administrador{
+color: #00628d;
+width: 280px;
+height: 130px;
+float: right;
+margin-top: 100px;
+margin-right: 260px;
+border: 2px solid #00628d;
+border-radius:7px; 
+-moz-border-radius:7px; /* Firefox */ 
+-webkit-border-radius:7px; /* Safari y Chrome */ 
+
+}
+#busqueda{
+  margin-top: 15px;
+}
+
+#formcontact{
+color: black;
+margin-top: 60px;
+float: left;
+margin-left: 500px;
+border: 2px solid #2b68a6;
+border-radius:7px; 
+-moz-border-radius:7px; /* Firefox */ 
+-webkit-border-radius:7px; /* Safari y Chrome */}
+}
+
+#mail{
+ 
+float: left;
+margin-top: 70px;
+margin-left: 350px;
+}
